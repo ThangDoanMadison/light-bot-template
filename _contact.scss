@@ -1,0 +1,372 @@
+@import "variables";
+@import "configs";
+.header {
+  &-inner {
+    // border: 1px solid #76584a;
+    margin: 0 auto;
+    background-color: $secondary-color;
+    height: 8.5rem;
+  }
+  .banner-contact {
+    position: relative;
+    margin: 0 auto;
+    height: 8.5rem;
+    background-color: $fourth-color;
+  }
+  .box-cont-page {
+    position: absolute;
+    left: 10.3%;
+    top: -260%;
+    z-index: 999;
+    @include mobile {
+      display: none;
+    }
+    @include big-mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+// NAV MOBILE
+nav-mobile {
+  @include mobile {
+  }
+  @include big-mobile {
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.nav-mobile .fa-bars {
+  position: absolute;
+  color: white;
+  z-index: 999;
+  left: 86%;
+  top: 5%;
+  font-size: 2rem ;
+  @include mobile {
+    
+  }
+  @include big-mobile {
+   
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+
+.banner-contact {
+  background-color: #372922;
+  &-inner {
+    height: 8.5rem;
+    background-color: #3b2c25;
+    border: 1px solid #60483c;
+  }
+  .light-bot-image-cont-page {
+    position: absolute;
+    left: 27.2%;
+    top: 1.8%;
+    z-index: 98;
+    @include mobile {
+      display: none;
+    }
+    @include big-mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}
+.contact-lamp {
+  position: absolute;
+  left: 74.5%;
+  @include mobile {
+    display: none;
+  }
+  @include big-mobile {
+    display: none;
+  }
+  @include tablet {
+    left: 19.5%;
+  }
+}
+.form-contact {
+  height: 91rem;
+  min-width: 5.6rem;
+  &-inner {
+    height: 91rem;
+    display: flex;
+    background-color: #f7f5f4;
+    min-width: 5.6rem;
+    @include mobile {
+      justify-content: center;
+    }
+    @include big-mobile {
+      justify-content: center;
+    }
+    @include tablet {
+      justify-content: center;
+    }
+  }
+  &-empty {
+    width: 34%;
+    @include mobile {
+      display: none;
+    }
+    @include big-mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &-details {
+    width: 66%;
+  }
+  &-header {
+    h2 {
+      font-size: 4.1rem;
+      font-family: "Duepuntozero";
+      color: #2f231e;
+      margin-top: 4.1rem;
+      margin-left: 0.8rem;
+    }
+  }
+  &-desc1 {
+    margin-top: 1.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: -0.47px;
+    margin-left: 1rem;
+  }
+}
+
+.new3 {
+  margin-top: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  margin-top: 2.2rem;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  @include mobile {
+    flex-direction: column;
+  }
+  @include big-mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+  }
+  .number {
+    line-height: 20px;
+    .phone {
+      font-weight: 700;
+      span {
+        margin-left: 2.4rem;
+        font-weight: 300;
+      }
+    }
+    .fax {
+      font-weight: 700;
+      span {
+        margin-left: 4.5rem;
+        font-weight: 300;
+      }
+    }
+  }
+  .text {
+    line-height: 2rem;
+    .skype {
+      margin-left: 5.7rem;
+      font-weight: 700;
+      @include mobile {
+        margin-left: 0;
+      }
+      @include big-mobile {
+        margin-left: 0;
+      }
+      @include tablet {
+      }
+      span {
+        margin-left: 2.9rem;
+        font-weight: 300;
+      }
+    }
+    .twitter {
+      margin-left: 5.6rem;
+      font-weight: 700;
+      @include mobile {
+        margin-left: 0;
+      }
+      @include big-mobile {
+        margin-left: 0;
+      }
+      @include tablet {
+      }
+    }
+    span {
+      margin-left: 2.4rem;
+      font-weight: 300;
+    }
+  }
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.7rem;
+  margin-right: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0.9rem;
+  & label {
+    text-transform: uppercase;
+    margin-top: 2.3rem;
+    letter-spacing: 1px;
+  }
+  & input {
+    margin-top: 0.8rem;
+    height: 3.5rem;
+  }
+  & .email-label {
+    margin-top: 2.8rem;
+  }
+  & .phone-label {
+    margin-top: 2.6rem;
+  }
+  & .mess-label {
+    margin-top: 2.8rem;
+  }
+  & textarea {
+    margin-top: 0.8rem;
+  }
+  & input,
+  & textarea {
+    width: 71.5%;
+  }
+  & button {
+    width: 10.4rem;
+    font-size: 1.1rem;
+    height: 3.4rem;
+    margin-left: 36.3rem;
+    margin-top: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    @include mobile {
+      margin-left: 0;
+    }
+    @include big-mobile {
+      margin-left: 0;
+    }
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+}
+
+//footer
+.footer-contact {
+  height: 13.2rem;
+  background-color: #3b2c25;
+  margin: 0 auto;
+  &-inner {
+    height: 13.2rem;
+    margin: 0 auto;
+    display: flex;
+    background-color: #32251f;
+    border: 2px solid #48362d;
+  }
+
+  &-column1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35.5%;
+    background-color: #291e18;
+    border: 1px solid #48362d;
+    height: 13rem;
+    @include mobile {
+      display: none;
+    }
+    &-logo {
+      margin-left: -4.5rem;
+      margin-top: -5.5rem;
+    }
+  }
+  &-column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66%;
+    height: 9.1rem;
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+    @include big-mobile {
+      flex-direction: column;
+    }
+  }
+  &-column2-detail1 {
+    width: 50%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    @include mobile {
+      width: 100%;
+    }
+    @include big-mobile {
+      width: 100%;
+    }
+  }
+  &-column2-detail1 p {
+    margin-left: 3.1rem;
+    margin-top: 0.3rem;
+    font-weight: 700;
+    padding-right: 0.1rem;
+  }
+  &-column2-detail1 span {
+    color: #a68a7d;
+  }
+  &-column2-detail2 {
+    width: 50%;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    @include mobile {
+      width: 100%;
+    }
+    @include big-mobile {
+      width: 100%;
+    }
+  }
+  &-column2-detail2 span {
+    color: #a68a7d;
+  }
+  &-column2-detail2 {
+    p {
+      font-size: 1.1rem;
+      margin-left: 6.7rem;
+      margin-top: 0.1rem;
+      font-weight: 700;
+      @include mobile {
+        margin-left: 3.1rem;
+      }
+      @include big-mobile {
+        margin-left: 3.1rem;
+      }
+    }
+  }
+}
