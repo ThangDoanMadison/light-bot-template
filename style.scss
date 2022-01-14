@@ -377,21 +377,45 @@ body {
       letter-spacing: -0.3px;
     }
   }
+  &-detail1{
+    .banner2-desc {
+      margin-top: 0.6rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 7.6rem;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      color: $sixth-color;
+      @include mobile {
+        padding-left: 0;
+      }
+    }
+  }
   &-detail2 {
     margin-top: 2.8rem;
+    .banner2-desc {
+      margin-top: 0.6rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 7.6rem;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      color: $sixth-color;
+      @include mobile {
+        padding-left: 0;
+      }
+    }
   }
   &-detail3 {
     margin-top: 2.7rem;
-  }
-  &-desc {
-    margin-top: 0.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 7.6rem;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    color: $sixth-color;
-    @include mobile {
-      padding-left: 0;
+    .banner2-desc {
+      margin-top: 0.6rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 7.6rem;
+      font-size: 1.3rem;
+      line-height: 1.9rem;
+      color: $sixth-color;
+      @include mobile {
+        padding-left: 0;
+      }
     }
   }
   // column 3
@@ -463,10 +487,10 @@ body {
     margin-top: 3.5rem;
   }
   &-detail2 {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
   }
   &-detail3 {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
   }
 }
 //banner3
@@ -656,7 +680,7 @@ body {
     font-size: 1.1rem;
     margin-left: 6.7rem;
     margin-top: 1px;
-    font-weight: 700;
+    font-weight: 700; 
     @include mobile {
       margin-left: 3.1rem;
     }

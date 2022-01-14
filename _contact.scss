@@ -31,7 +31,7 @@
 }
 
 // NAV MOBILE
-nav-mobile {
+.nav-mobile {
   @include mobile {
   }
   @include big-mobile {
@@ -42,27 +42,28 @@ nav-mobile {
   @include desktop {
     display: none;
   }
+  .nav-mobile .fa-bars {
+    position: absolute;
+    color: white;
+    z-index: 999;
+    left: 86%;
+    top: 5%;
+    font-size: 2rem ;
+    @include mobile {
+      
+    }
+    @include big-mobile {
+     
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
 }
-.nav-mobile .fa-bars {
-  position: absolute;
-  color: white;
-  z-index: 999;
-  left: 86%;
-  top: 5%;
-  font-size: 2rem ;
-  @include mobile {
-    
-  }
-  @include big-mobile {
-   
-  }
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
-  }
-}
+
 
 
 .banner-contact {
@@ -74,8 +75,8 @@ nav-mobile {
   }
   .light-bot-image-cont-page {
     position: absolute;
-    left: 27.2%;
-    top: 1.8%;
+    left: 32.5%;
+    top: 1.9%;
     z-index: 98;
     @include mobile {
       display: none;
@@ -104,6 +105,7 @@ nav-mobile {
 .form-contact {
   height: 91rem;
   min-width: 5.6rem;
+  background-color: #edeae8;
   &-inner {
     height: 91rem;
     display: flex;
@@ -239,6 +241,9 @@ nav-mobile {
     margin-top: 0.8rem;
     height: 3.5rem;
   }
+  & input[type="text"]{
+    font-size: 10px;
+  }
   & .email-label {
     margin-top: 2.8rem;
   }
@@ -263,6 +268,7 @@ nav-mobile {
     margin-top: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    background-color: #cdc4be;
     @include mobile {
       margin-left: 0;
     }
@@ -299,7 +305,7 @@ nav-mobile {
     @include mobile {
       display: none;
     }
-    &-logo {
+    .footer-contact-logo {
       margin-left: -4.5rem;
       margin-top: -5.5rem;
     }
