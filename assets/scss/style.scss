@@ -40,6 +40,10 @@ body {
     height: 5rem;
     line-height: 4rem;
   }
+  // .nav-active{
+  //   background-image: url(../images/lamp.png);
+  //   background-position: top;
+  // }
   &-menu {
     display: flex;
     align-items: center;
@@ -59,7 +63,21 @@ body {
       text-align: center;
       left: 26%;
     }
-
+    .lamp {
+      position: absolute;
+      left: -6.3rem;
+      top: -5rem;
+      @include mobile {
+        display: none;
+      }
+      @include big-mobile {
+        display: none;
+      }
+      @include tablet {
+        left: -7rem;
+        top: -5rem;
+      }
+    }
     .item-home {
       margin-left: 0;
       a {
@@ -127,19 +145,7 @@ body {
       justify-items: center;
     }
   }
-  .lamp {
-    position: absolute;
-    left: 46.5%;
-    @include mobile {
-      display: none;
-    }
-    @include big-mobile {
-      display: none;
-    }
-    @include tablet {
-      left: 19.5%;
-    }
-  }
+
   .box {
     position: absolute;
     left: 10.3%;
@@ -215,7 +221,7 @@ body {
   font-size: 2.4rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-.nav-mobile-link:hover{
+.nav-mobile-link:hover {
   color: brown;
 }
 .nav-mobile-close {
@@ -357,22 +363,22 @@ body {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 1400px) and (max-width: 1700px)  {
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
   .banner-detail {
     left: 40%;
   }
 }
-@media screen and (min-width: 1700px) and (max-width: 1900px)  {
+@media screen and (min-width: 1700px) and (max-width: 1900px) {
   .banner-detail {
     left: 42%;
   }
 }
-@media screen and (min-width: 1900px) and (max-width: 2700px)  {
+@media screen and (min-width: 1900px) and (max-width: 2700px) {
   .banner-detail {
     left: 44%;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1109px)  {
+@media screen and (min-width: 1024px) and (max-width: 1109px) {
   .banner-detail {
     width: 45%;
   }
@@ -678,7 +684,7 @@ body {
       margin-top: 1.4rem;
     }
     @include big-mobile {
-      margin-top: 10px; ;
+      margin-top: 10px;
     }
   }
   &-list {
@@ -693,10 +699,10 @@ body {
     text-align: center;
     padding: 4px;
     margin-right: 0.9rem;
-    &:hover{
+    &:hover {
       background-color: #a37a7e;
     }
-    &:active{
+    &:active {
       background-color: thistle;
     }
     a {
@@ -825,4 +831,3 @@ body {
     }
   }
 }
-

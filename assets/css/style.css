@@ -86,6 +86,27 @@ table {
     display: none;
   }
 }
+.header .contact-lamp {
+  position: absolute;
+  left: 33rem;
+  top: -5rem;
+}
+@media (max-width: 479px) {
+  .header .contact-lamp {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767.98px) {
+  .header .contact-lamp {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .contact-lamp {
+    left: 33rem;
+    top: -5rem;
+  }
+}
 
 .nav-bars-btn .fa-bars {
   position: absolute;
@@ -220,26 +241,6 @@ table {
 @media (min-width: 768px) and (max-width: 1023px) {
   .banner-contact .light-bot-image-cont-page {
     display: none;
-  }
-}
-
-.contact-lamp {
-  position: absolute;
-  left: 74.5%;
-}
-@media (max-width: 479px) {
-  .contact-lamp {
-    display: none;
-  }
-}
-@media (min-width: 480px) and (max-width: 767.98px) {
-  .contact-lamp {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .contact-lamp {
-    left: 19.5%;
   }
 }
 
@@ -450,7 +451,8 @@ table {
 #contact-form button:hover {
   background-color: wheat;
 }
-#contact-form textarea:focus, #contact-form input:focus {
+#contact-form textarea:focus,
+#contact-form input:focus {
   outline: 1px solid #cec5bf;
 }
 
@@ -633,6 +635,27 @@ body {
     left: 26%;
   }
 }
+.header-menu .lamp {
+  position: absolute;
+  left: -6.3rem;
+  top: -5rem;
+}
+@media (max-width: 479px) {
+  .header-menu .lamp {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767.98px) {
+  .header-menu .lamp {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-menu .lamp {
+    left: -7rem;
+    top: -5rem;
+  }
+}
 .header-menu .item-home {
   margin-left: 0;
 }
@@ -695,25 +718,6 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
   .header-menu li a {
     justify-items: center;
-  }
-}
-.header .lamp {
-  position: absolute;
-  left: 46.5%;
-}
-@media (max-width: 479px) {
-  .header .lamp {
-    display: none;
-  }
-}
-@media (min-width: 480px) and (max-width: 767.98px) {
-  .header .lamp {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header .lamp {
-    left: 19.5%;
   }
 }
 .header .box {

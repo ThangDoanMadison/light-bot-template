@@ -1,4 +1,3 @@
-
 @import "variables";
 @import "configs";
 .header {
@@ -27,6 +26,21 @@
     }
     @include tablet {
       display: none;
+    }
+  }
+  .contact-lamp {
+    position: absolute;
+    left: 33rem;
+    top: -5rem;
+    @include mobile {
+      display: none;
+    }
+    @include big-mobile {
+      display: none;
+    }
+    @include tablet {
+      left: 33rem;
+      top: -5rem;
     }
   }
 }
@@ -89,7 +103,7 @@
   font-size: 2.4rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-.nav-mobile-link:hover{
+.nav-mobile-link:hover {
   color: brown;
 }
 .nav-mobile-close {
@@ -130,7 +144,6 @@
   }
 }
 
-
 .banner-contact {
   background-color: #372922;
   &-inner {
@@ -154,19 +167,7 @@
     }
   }
 }
-.contact-lamp {
-  position: absolute;
-  left: 74.5%;
-  @include mobile {
-    display: none;
-  }
-  @include big-mobile {
-    display: none;
-  }
-  @include tablet {
-    left: 19.5%;
-  }
-}
+
 .form-contact {
   height: 91rem;
   min-width: 5.6rem;
@@ -319,7 +320,6 @@
   }
   textarea {
     margin-top: 0.8rem;
-
   }
   input,
   textarea {
@@ -349,13 +349,14 @@
     @include tablet {
       margin-left: 0;
     }
-    &:hover{
+    &:hover {
       background-color: wheat;
     }
   }
-  textarea:focus, input:focus{
+  textarea:focus,
+  input:focus {
     outline: 1px solid #cec5bf;
-}
+  }
 }
 
 //footer
