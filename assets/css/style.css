@@ -900,7 +900,7 @@ body {
 }
 .banner #banner-title {
   flex: 1;
-  background: url("/assets/images/Light-BOX.png") no-repeat;
+  background: url("../images/Light-BOX.png") no-repeat;
   background-size: contain;
   height: 95px;
   margin: 78px 0 0 165px;
