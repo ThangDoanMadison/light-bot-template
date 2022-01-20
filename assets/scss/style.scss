@@ -1,6 +1,8 @@
+@import "reset";
 @import "variables";
 @import "contact";
 @import "configs";
+
 html {
   font-size: 62.5%; // 1rem = 1px;
 }
@@ -61,6 +63,9 @@ body {
     .item-home {
       margin-left: 0;
       a {
+        img:hover {
+          transform: scale(1.5);
+        }
         p {
           margin-left: 0.7rem;
         }
@@ -69,6 +74,9 @@ body {
     .item-work {
       margin-left: 9.7rem;
       a {
+        img:hover {
+          transform: scale(1.5);
+        }
         p {
           margin-left: 0.3rem;
         }
@@ -77,6 +85,9 @@ body {
     .item-about {
       margin-left: 9.1rem;
       a {
+        img:hover {
+          transform: scale(1.5);
+        }
         p {
           margin-left: -0.1rem;
         }
@@ -87,6 +98,9 @@ body {
       margin-top: 0rem;
       line-height: 2.5rem;
       a {
+        img:hover {
+          transform: scale(1.5);
+        }
         img {
           margin-top: 0rem;
         }
@@ -142,38 +156,106 @@ body {
     }
   }
 }
+
+// NAV MOBILE
+.nav-bars-btn {
+  .fa-bars {
+    position: absolute;
+    color: white;
+    z-index: 999;
+    left: 86%;
+    top: 5%;
+    font-size: 2rem;
+    @include mobile {
+    }
+    @include big-mobile {
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+}
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
 .nav-mobile {
-  @include mobile {
-  }
-  @include big-mobile {
-  }
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-.nav-mobile .fa-bars {
-  position: absolute;
-  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: #fff;
   z-index: 999;
-  left: 86%;
-  top: 5%;
-  font-size: 2rem ;
-  @include mobile {
-    
-  }
-  @include big-mobile {
-   
-  }
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform linear 0.2s, opacity linear 0.2s;
+  padding-left: 14px;
+}
+.nav-mobile-list {
+  margin-top: 24px;
+  line-height: 20px;
+}
+.nav-mobile-link {
+  text-decoration: none;
+  color: #a37a7e;
+  display: block;
+  padding: 8px 0;
+  font-size: 2.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-mobile-link:hover{
+  color: brown;
+}
+.nav-mobile-close {
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 2.4rem;
+  color: #666;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.fa-times {
+  width: 24px;
+  height: 24px;
+}
+.nav-input {
+  display: none;
+}
+.nav-input:checked ~ .nav-overlay {
+  display: block;
+}
+.nav-input:checked ~ .nav-mobile {
+  transform: translateX(0%);
+  opacity: 1;
+}
+@media (max-width: 1023px) {
+  .nav-bars-btn {
+    display: block;
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 //banner section
 .banner {
   position: relative;
@@ -196,10 +278,16 @@ body {
       justify-content: center;
     }
   }
-  img {
-    position: absolute;
-    left: 26.2%;
-    top: 41.5%;
+  #banner-image {
+    position: relative;
+    top: -225px;
+    left: -15%;
+    z-index: 2;
+  }
+  #banner-logo {
+    width: 350px;
+    margin-right: 20px;
+    margin-top: 10px;
     @include mobile {
       display: none;
     }
@@ -209,6 +297,18 @@ body {
     @include tablet {
       display: none;
     }
+  }
+  #banner-title {
+    flex: 1;
+    background: url("/assets/images/Light-BOX.png") no-repeat;
+    background-size: contain;
+    // width: 124px;
+    height: 95px;
+    margin: 78px 0 0 165px;
+    position: relative;
+    text-indent: -9999px;
+    top: 0px;
+    z-index: 10;
   }
   &-detail {
     position: absolute;
@@ -254,6 +354,27 @@ body {
   }
   &-link {
     color: white;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1700px)  {
+  .banner-detail {
+    left: 40%;
+  }
+}
+@media screen and (min-width: 1700px) and (max-width: 1900px)  {
+  .banner-detail {
+    left: 42%;
+  }
+}
+@media screen and (min-width: 1900px) and (max-width: 2700px)  {
+  .banner-detail {
+    left: 44%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1109px)  {
+  .banner-detail {
+    width: 45%;
   }
 }
 
@@ -377,7 +498,7 @@ body {
       letter-spacing: -0.3px;
     }
   }
-  &-detail1{
+  &-detail1 {
     .banner2-desc {
       margin-top: 0.6rem;
       font-family: Arial, Helvetica, sans-serif;
@@ -539,6 +660,9 @@ body {
     @include mobile {
       flex-direction: column;
     }
+    @include big-mobile {
+      flex-direction: column;
+    }
   }
   h2 {
     font-size: 4rem;
@@ -553,6 +677,9 @@ body {
       margin-right: -0.3rem;
       margin-top: 1.4rem;
     }
+    @include big-mobile {
+      margin-top: 10px; ;
+    }
   }
   &-list {
     display: flex;
@@ -562,11 +689,17 @@ body {
     width: 2.1rem;
     background-color: $nineth-color;
     border-radius: 50%;
-    color: white;
     font-size: 1.5rem;
     text-align: center;
     padding: 4px;
     margin-right: 0.9rem;
+    &:hover{
+      background-color: #a37a7e;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
   &-list li:first-child {
     background-color: #a37a7e;
@@ -607,11 +740,10 @@ body {
     margin: 0 auto;
     display: flex;
     background-color: #32251f;
-    border: 2px solid #48362d;
   }
   &-logo {
-    margin-left: -4.5rem;
-    margin-top: -1.5rem;
+    margin-left: -4.4rem;
+    margin-top: -1.2rem;
   }
   &-column1 {
     display: flex;
@@ -619,7 +751,8 @@ body {
     align-items: center;
     width: 35.5%;
     background-color: #291e18;
-    border: 1px solid #48362d;
+    border-left: 1px solid #48362d;
+    border-right: 1px solid #48362d;
     height: 8.9rem;
     @include mobile {
       display: none;
@@ -653,7 +786,7 @@ body {
     }
   }
   &-column2-detail1 p {
-    margin-left: 3.1rem;
+    margin-left: 3.2rem;
     margin-top: 0.3rem;
     font-weight: 700;
     padding-right: 1px;
@@ -678,9 +811,9 @@ body {
   }
   &-column2-detail2 p {
     font-size: 1.1rem;
-    margin-left: 6.7rem;
-    margin-top: 1px;
-    font-weight: 700; 
+    margin-left: 6.5rem;
+    margin-top: 6px;
+    font-weight: 700;
     @include mobile {
       margin-left: 3.1rem;
     }

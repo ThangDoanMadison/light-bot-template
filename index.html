@@ -5,41 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
-    <link rel="stylesheet" href="duepuntozero/Duepuntozero-Regular-Trial.ttf" />
-    <link rel="stylesheet" href="font-helvetica-viet-hoa_100028/Font Helvetica viet hoa/Helvetica.ttf">
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/fonts/duepuntozero/Duepuntozero-Regular-Trial.ttf" />
+    <link rel="stylesheet" href="/assets/fonts/helvetica/Helvetica.ttf">
   </head>
   <body>
     <!-- HEADER -->
-    <div class="wrapper">
+    <div class="">
       <header class="header">
-        <img class="box" src="images/box.png" alt="" />
-        <img class="lamp" src="images/lamp.png" alt="">
+        <!-- <img class="box" src="assets/images/box.png" alt="" /> -->
+        <img class="lamp" src="assets/images/lamp.png" alt="">
         <div class="header-inner container">
           <ul class="header-menu">
             <li class="item-home">
               <a href="index.html">
-                <img src="images/home-icon.png" alt="" />
+                <img src="assets/images/home-icon.png" alt="" />
                 <p>Home</p>
               </a>
             </li>
             <li class="item-work">
-              <a href="">
-                <img src="images/work-icon.png" alt="" />
+              <a href="#">
+                <img src="assets/images/work-icon.png" alt="" />
                 <p>Work</p>
               </a>
             </li>
             <li class="item-about">
-              <a href="">
-                <img src="images/about-icon.png" alt="" />
+              <a href="#">
+                <img src="assets/images/about-icon.png" alt="" />
                 <p>About</p>
               </a>
             </li>
             <li class="item-contact">
               <a href="contact.html">
-                <img src="images/contact-icon.png" alt="" />
+                <img src="assets/images/contact-icon.png" alt="" />
                 <p>Contact</p>
               </a>
             </li>
@@ -49,13 +49,34 @@
     </div>
 
     <!-- NAV MOBILE -->
-    <div class="nav-mobile">
+    <label for="nav-mobile-input" class="nav-bars-btn">
     <i class="fas fa-bars"></i>
-  </div>
-    <!-- Banner -->
-    <div class="banner wrapper">
-      <img class="light-bot-image" src="images/Light-BOX.png" alt="" />
+    </label>
+
+  <input type="checkbox" name="" class="nav-input" id="nav-mobile-input" >
+
+  <label for="nav-mobile-input" class="nav-overlay"></label>
+
+  <nav class="nav-mobile">
+    <label for="nav-mobile-input" class="nav-mobile-close">
+      <i class="fas fa-times"></i>
+    </label>
+    <ul class="nav-mobile-list">
+      <li><a href="index.html" class="nav-mobile-link">Home</a></li>
+      <li><a href="#" class="nav-mobile-link">Work</a></li>
+      <li><a href="#" class="nav-mobile-link">About</a></li>
+      <li><a href="#" class="nav-mobile-link">Contact</a></li>
+    </ul>
+  </nav>
+
+
+    <!-- BANNER -->
+    <div class="banner">
       <div class="banner-inner container">
+          <div id="banner-logo">
+            <h1 id="banner-title"><a href="index.html">Light Box</a></h1>
+            <img id="banner-image" src="/assets/images/box.png" alt="Light Box" />
+          </div>
         <div class="banner-detail">
           <p class="banner-desc">
             Hi, we're LightBox, a completely made up design agency<br />
@@ -68,8 +89,8 @@
       </div>
     </div>
 
-<!-- Banner2  -->
-    <div class="banner2 wrapper">
+<!-- BANNER2  -->
+    <div class="banner2 ">
       <div class="banner2-inner container">
         <div class="banner2-column1"></div>
         <div class="banner2-column2">
@@ -77,7 +98,7 @@
           <hr class="line" />
           <div class="banner2-detail1">
             <div class="banner2-title-small1">
-              <img src="images/repair-tool-icon.png" alt="" />
+              <img src="assets/images/repair-tool-icon.png" alt="" />
               <h3>Web Development</h3>
             </div>
             <p class="banner2-desc">
@@ -89,7 +110,7 @@
           </div>
           <div class="banner2-detail2">
             <div class="banner2-title-small2">
-              <img src="images/computer-icon.png" alt="" />
+              <img src="assets/images/computer-icon.png" alt="" />
               <h3>Graphics</h3>
             </div>
             <p class="banner2-desc">
@@ -101,7 +122,7 @@
           </div>
           <div class="banner2-detail3">
             <div class="banner2-title-small3">
-              <img src="images/chart-icon.png" alt="" />
+              <img src="assets/images/chart-icon.png" alt="" />
               <h3>Usability Design</h3>
             </div>
             <p class="banner2-desc">
@@ -131,8 +152,8 @@
         </div>
       </div>
     </div>
-<!-- Banner3 -->
-    <div class="banner3 wrapper">
+<!-- BANNER3 -->
+    <div class="banner3 ">
       <div class="banner3-inner container">
         <div class="banner3-column1"></div>
         <div class="banner3-column2">
@@ -141,15 +162,15 @@
             <h2 class="banner3-title">Recent Work</h2>
             <div class="banner3-nav">
               <ul class="banner3-list">
-                <li class="banner3-link">1</li>
-                <li class="banner3-link">2</li>
-                <li class="banner3-link">3</li>
-                <li class="banner3-link">4</li>
+                <li class="banner3-link"><a href="#">1</a></li>
+                <li class="banner3-link"><a href="#">2</a></li>
+                <li class="banner3-link"><a href="#">3</a></li>
+                <li class="banner3-link"><a href="#">4</a></li>
               </ul>
             </div>
           </div>
           <div>
-          <img src="images/banner3-web-design.png" alt=""/>
+          <img src="assets/images/banner3-web-design.png" alt=""/>
           <p class="banner3-note">
             <span class="banner3-important-note">Web Design Week Layout:</span>
             A design layout I created for Psdtuts
@@ -157,11 +178,11 @@
         </div>
       </div>
     </div>
-<!-- Footer -->
-    <footer class="footer wrapper">
+<!-- FOOTER-->
+    <footer class="footer ">
       <div class="footer-inner container">
         <div class="footer-column1">
-          <img class="footer-logo" src="images/footer-logo.png" alt="" />
+          <img class="footer-logo" src="assets/images/footer-logo.png" alt="" />
         </div>
         <div class="footer-column2">
           <div class="footer-column2-detail1">
