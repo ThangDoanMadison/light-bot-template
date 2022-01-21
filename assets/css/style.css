@@ -658,6 +658,7 @@ body {
 }
 .header-menu .item-home {
   margin-left: 0;
+  z-index: 10;
 }
 .header-menu .item-home a img:hover {
   transform: scale(1.5);
@@ -667,6 +668,7 @@ body {
 }
 .header-menu .item-work {
   margin-left: 9.7rem;
+  z-index: 10;
 }
 .header-menu .item-work a img:hover {
   transform: scale(1.5);
@@ -676,6 +678,7 @@ body {
 }
 .header-menu .item-about {
   margin-left: 9.1rem;
+  z-index: 10;
 }
 .header-menu .item-about a img:hover {
   transform: scale(1.5);
@@ -687,6 +690,7 @@ body {
   margin-left: 9.3rem;
   margin-top: 0rem;
   line-height: 2.5rem;
+  z-index: 10;
 }
 .header-menu .item-contact a img:hover {
   transform: scale(1.5);
@@ -1356,11 +1360,11 @@ body {
   text-decoration: none;
   color: white;
 }
-.banner3-list li:first-child {
-  background-color: #a37a7e;
-}
 .banner3-list li:last-child {
   margin-right: 0rem;
+}
+.banner3 .active {
+  background: #a37a7e;
 }
 .banner3-column2 img {
   margin-top: 2rem;

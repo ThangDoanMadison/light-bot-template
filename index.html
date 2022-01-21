@@ -163,7 +163,7 @@
             <h2 class="banner3-title">Recent Work</h2>
             <div class="banner3-nav">
               <ul class="banner3-list">
-                <li class="banner3-link"><a href="#">1</a></li>
+                <li class="banner3-link active"><a href="#">1</a></li>
                 <li class="banner3-link"><a href="#">2</a></li>
                 <li class="banner3-link"><a href="#">3</a></li>
                 <li class="banner3-link"><a href="#">4</a></li>
@@ -196,5 +196,15 @@
         </div>
       </div>
     </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('click', 'ul li', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script>
   </body>
 </html>
